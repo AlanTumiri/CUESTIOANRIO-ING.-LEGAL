@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Engineering Quiz Pro</title>
+    <link rel="stylesheet" href="ING-LEGAL.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-decor">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+    </div>
+
+    <div class="container">
+        <div class="quiz-card" id="main-card">
+            <header>
+                <div class="top-bar">
+                    <span class="category">Ingeniería Legal</span>
+                    <span class="q-count" id="q-count">01/19</span>
+                </div>
+                <div class="progress-wrapper">
+                    <div class="progress-fill" id="progress"></div>
+                </div>
+            </header>
+
+            <main id="game-area">
+                <h2 id="question">Cargando...</h2>
+                <div id="choices-grid" class="choices-grid"></div>
+            </main>
+
+            <section id="results" class="hidden">
+                <div class="results-inner">
+                    <div class="score-circle">
+                        <span id="score-text">0</span>
+                        <small>de 19</small>
+                    </div>
+                    <h2>¡Examen Completado!</h2>
+                    <p id="feedback-msg"></p>
+                    <button class="btn-restart" onclick="restartQuiz()">Reiniciar Desafío</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="ING-LEGAL.js"></script>
+</body>
+</html>
